@@ -1,0 +1,373 @@
+.business-solutions-banner {
+  background: linear-gradient(135deg, #00FF66 0%, #00FF66 100%);
+  width: 100%;
+}
+
+.business-solutions-container {
+  max-width: 1902px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.business-solutions-image-wrapper {
+  flex-shrink: 0;
+  width: 280px;
+  height: 380px;
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(0 0, 85% 0, 100% 15%, 100% 100%, 0 100%);
+}
+
+.business-solutions-image-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.business-solutions-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.business-solutions-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.business-solutions-title {
+  font-size: 48px;
+  font-weight: 900;
+  color: #1a1a1a;
+  margin: 0 0 25px 0;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+}
+
+.business-solutions-description {
+  font-size: 18px;
+  color: #333333;
+  line-height: 1.6;
+  margin: 0 0 40px 0;
+  max-width: 600px;
+}
+
+.business-solutions-button {
+  background: linear-gradient(135deg, black 0%, black 100%);
+  color: white;
+  border: none;
+  padding: 18px 42px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 24px #000000;
+  text-transform: uppercase;
+}
+
+.business-solutions-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px #00FF66;
+}
+
+.business-solutions-button:active {
+  transform: translateY(-1px);
+}
+
+/* ============================================
+   Service Updates Section Styles
+   ============================================ */
+
+.service-updates-section {
+  background: white;
+  padding: 80px 20px;
+  width: 100%;
+}
+
+.service-updates-container {
+  max-width: 1902px;
+  margin: 0 auto;
+}
+
+.service-updates-title {
+  font-size: 42px;
+  font-weight: 900;
+  color: #1a1a1a;
+  margin: 0 0 15px 0;
+  letter-spacing: -0.5px;
+}
+
+.service-updates-subtitle {
+  font-size: 18px;
+  color: #556575;
+  line-height: 1.6;
+  margin: 0 0 50px 0;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.service-updates-subtitle::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #00FF66 0%, #00FF66 100%);
+  border-radius: 2px;
+}
+
+.service-updates-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-update-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid #e8eaed;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  color: #333333;
+  text-decoration: none;
+}
+
+.service-update-item:last-child {
+  border-bottom: none;
+}
+
+.service-update-item:hover {
+  color: #00FF66;
+  padding-left: 15px;
+}
+
+.service-update-text {
+  flex: 1;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.service-update-arrow {
+  color: #00FF66;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 20px;
+  transition: all 0.3s ease;
+}
+
+.service-update-item:hover .service-update-arrow {
+  transform: translateX(5px);
+}
+
+/* ============================================
+   Responsive Design - Tablet (992px)
+   ============================================ */
+
+@media (max-width: 992px) {
+  .business-solutions-container {
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  .business-solutions-image-wrapper {
+    width: 240px;
+    height: 320px;
+  }
+
+  .business-solutions-title {
+    font-size: 36px;
+  }
+
+  .business-solutions-description {
+    font-size: 16px;
+  }
+
+  .service-updates-section {
+    padding: 60px 20px;
+  }
+
+  .service-updates-title {
+    font-size: 32px;
+  }
+
+  .service-updates-subtitle {
+    font-size: 16px;
+  }
+}
+
+/* ============================================
+   Responsive Design - Tablet (768px)
+   ============================================ */
+
+@media (max-width: 768px) {
+  /* .business-solutions-banner {
+    padding: 40px 20px;
+  } */
+
+  .business-solutions-container {
+    gap: 30px;
+  }
+
+  .business-solutions-image-wrapper {
+    width: 200px;
+    height: 280px;
+  }
+
+  .business-solutions-title {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .business-solutions-description {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  .business-solutions-button {
+    padding: 14px 32px;
+    font-size: 14px;
+  }
+
+  .service-updates-title {
+    font-size: 26px;
+  }
+
+  .service-updates-subtitle {
+    font-size: 15px;
+  }
+
+  .service-update-item {
+    padding: 16px 0;
+    font-size: 14px;
+  }
+}
+
+/* ============================================
+   Responsive Design - Small Phone (480px)
+   ============================================ */
+
+@media (max-width: 480px) {
+  /* .business-solutions-banner {
+    padding: 30px 16px;
+  } */
+
+  .business-solutions-container {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .business-solutions-image-wrapper {
+    width: 100%;
+    max-width: 280px;
+    height: 320px;
+    clip-path: none;
+    border-radius: 12px;
+  }
+
+  .business-solutions-title {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .business-solutions-description {
+    font-size: 14px;
+    margin-bottom: 24px;
+    line-height: 1.5;
+  }
+
+  .business-solutions-button {
+    width: 100%;
+    padding: 14px 24px;
+    font-size: 13px;
+  }
+
+  .service-updates-section {
+    padding: 40px 16px;
+  }
+
+  .service-updates-title {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  .service-updates-subtitle {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .service-update-item {
+    padding: 14px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .service-update-arrow {
+    margin-left: 0;
+  }
+}
+
+/* ============================================
+   Responsive Design - Extra Small (390px, 375px, 320px)
+   ============================================ */
+
+@media (max-width: 390px) {
+  .business-solutions-banner {
+    padding: 5px 15px;
+  }
+
+  .business-solutions-image-wrapper {
+    width: 50%;
+    max-width: 500px;
+    height: 200px;
+    margin-left: 90px;
+  }
+
+  .business-solutions-title {
+    font-size: 20px;
+    margin-left: 60px;
+    margin-top: -50px;
+  }
+
+  .business-solutions-description {
+    font-size: 12px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+  }
+
+  .business-solutions-button {
+    padding: 12px 20px;
+    font-size: 12px;
+  }
+
+  .service-updates-section {
+    padding: 30px 12px;
+  }
+
+  .service-updates-title {
+    font-size: 20px;
+  }
+
+  .service-updates-subtitle {
+    font-size: 13px;
+  }
+
+  .service-update-item {
+    padding: 12px 0;
+    font-size: 13px;
+  }
+
+ 
+}

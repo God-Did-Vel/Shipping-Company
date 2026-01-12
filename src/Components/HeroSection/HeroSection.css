@@ -1,0 +1,284 @@
+.hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 80px 120px;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+}
+
+.hero-text-wrapper {
+  max-width: 800px;
+}
+
+.hero-title {
+  font-size: 72px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+  margin: 0 0 24px 0;
+  text-transform: lowercase;
+  letter-spacing: -1px;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1.6;
+  margin: 0 0 48px 0;
+  max-width: 600px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 16px 32px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-primary {
+  background-color: #3db5b5;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #35a0a0;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: rgba(80, 80, 80, 0.9);
+  color: #ffffff;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(60, 60, 60, 0.9);
+  transform: translateY(-2px);
+}
+
+.arrow {
+  font-size: 16px;
+}
+
+.hero-banner {
+  background-color: #3db5b5;
+  padding: 20px 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.banner-text {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.btn-dark {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  white-space: nowrap;
+  padding: 14px 28px;
+}
+
+.btn-dark:hover {
+  background-color: #000000;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+
+/* 1920px - Default styles above */
+
+/* 992px and below */
+@media (max-width: 992px) {
+  .hero-content {
+    padding: 60px 60px;
+  }
+
+  .hero-title {
+    font-size: 56px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+  }
+
+  .hero-banner {
+    padding: 24px 60px;
+  }
+
+  .banner-text {
+    font-size: 16px;
+  }
+}
+
+/* 768px and below */
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 50px 40px;
+  }
+
+  .hero-title {
+    font-size: 48px;
+  }
+
+  .hero-subtitle {
+    font-size: 15px;
+    margin-bottom: 36px;
+  }
+
+  .hero-buttons {
+    gap: 16px;
+  }
+
+  .btn {
+    padding: 14px 28px;
+    font-size: 13px;
+  }
+
+  .hero-banner {
+    padding: 24px 40px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner-text {
+    font-size: 15px;
+  }
+}
+
+/* 480px and below */
+@media (max-width: 480px) {
+  .hero-content {
+    padding: 40px 24px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-subtitle {
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 24px;
+  }
+
+  .hero-banner {
+    padding: 20px 24px;
+  }
+
+  .banner-text {
+    font-size: 14px;
+  }
+
+  .btn-dark {
+    width: 100%;
+    padding: 12px 24px;
+  }
+}
+
+/* 390px and below */
+@media (max-width: 390px) {
+  .hero-content {
+    padding: 36px 20px;
+  }
+
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .hero-subtitle {
+    font-size: 14px;
+  }
+
+  .hero-banner {
+    padding: 18px 20px;
+  }
+}
+
+/* 375px and below */
+@media (max-width: 375px) {
+  .hero-title {
+    font-size: 30px;
+  }
+
+  .hero-subtitle {
+    font-size: 13px;
+  }
+}
+
+/* 320px and below */
+@media (max-width: 320px) {
+  .hero-content {
+    padding: 32px 16px;
+  }
+
+  .hero-title {
+    font-size: 28px;
+  }
+
+  .hero-subtitle {
+    font-size: 13px;
+    margin-bottom: 28px;
+  }
+
+  .btn {
+    padding: 12px 20px;
+    font-size: 12px;
+  }
+
+  .hero-banner {
+    padding: 16px 16px;
+  }
+
+  .banner-text {
+    font-size: 13px;
+  }
+
+  .btn-dark {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+}
