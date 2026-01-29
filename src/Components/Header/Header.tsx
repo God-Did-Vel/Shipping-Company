@@ -22,37 +22,25 @@ export default function Header() {
     {
       label: "Company",
       dropdown: [
-        { label: "About Us", href: "/about" },
-        { label: "Our Team", href: "/team" },
-        { label: "Careers", href: "/careers" },
-        { label: "Press", href: "/press" },
+        { label: "About Us", href: "/AboutUs" },
       ],
     },
     {
       label: "Services",
       dropdown: [
-        { label: "Consulting", href: "/consulting" },
-        { label: "Development", href: "/development" },
-        { label: "Support", href: "/support" },
-        { label: "Training", href: "/training" },
+        { label: "Development", href: "/Development" },
       ],
     },
     {
       label: "Resources",
       dropdown: [
-        { label: "Documentation", href: "/docs" },
-        { label: "Blog", href: "/blog" },
-        { label: "Case Studies", href: "/case-studies" },
-        { label: "Tutorials", href: "/tutorials" },
+        { label: "Documentation", href: "/Documentations" },
       ],
     },
     {
       label: "Contact Us",
       dropdown: [
-        { label: "Get in Touch", href: "/contact" },
-        { label: "Support", href: "/support" },
-        { label: "Sales", href: "/sales" },
-        { label: "Locations", href: "/locations" },
+        { label: "Get in Touch", href: "/ContactUs" },
       ],
     },
   ]

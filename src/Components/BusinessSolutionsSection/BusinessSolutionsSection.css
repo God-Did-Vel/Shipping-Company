@@ -33,18 +33,20 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  margin-left: 50px;
 }
 
 .business-solutions-content {
+  margin-left: 70px;
   flex: 1;
-  min-width: 0;
+  min-width: 20;
 }
 
 .business-solutions-title {
-  font-size: 48px;
+  font-size: 50px;
   font-weight: 900;
   color: #1a1a1a;
-  margin: 0 0 25px 0;
+  margin: 0 0 30px 0;
   line-height: 1.1;
   letter-spacing: -0.5px;
 }
@@ -69,7 +71,6 @@
   letter-spacing: 0.5px;
   transition: all 0.3s ease;
   box-shadow: 0 8px 24px #000000;
-  text-transform: uppercase;
 }
 
 .business-solutions-button:hover {
@@ -155,6 +156,7 @@
 .service-update-text {
   flex: 1;
   font-weight: 500;
+  font-size: 25px;
   line-height: 1.5;
 }
 

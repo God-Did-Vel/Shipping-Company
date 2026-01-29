@@ -1,5 +1,5 @@
 import "./DocumentShipping.css"
-import DocumentImage from "../../Images/Logistic-Company.png";
+import DocumentImage from "../../Images/sheep.png";
 
 export default function DocumentShippingSection() {
   return (
